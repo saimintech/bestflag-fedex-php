@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jeremy-dunn/php-fedex-api-wrapper": "^5.0"
+    }
+}
