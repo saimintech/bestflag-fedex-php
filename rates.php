@@ -130,7 +130,8 @@ $rateReply = $rateServiceRequest->getGetRatesReply($rateRequest); // send true a
 
 $count = 0;
 $result = array();
-
+echo '<pre>';
+print_r ($rateReply);
 if (!empty($rateReply->RateReplyDetails)) {
     $result['err'] = false;
     
