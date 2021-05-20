@@ -4,10 +4,6 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
 if(!isset($_POST) && !isset($_GET))
 	die;
 
-print_r($_POST);
-print_r($_GET);
-
-
 require_once "functions.php";
 require_once "vendor/autoload.php";
 
@@ -36,11 +32,6 @@ $length     = (int)trim($_POST['length']);
 $width      = (int)trim($_POST['width']);
 $height     = (int)trim($_POST['height']);
 
-
-echo "shipToZip: ".$shipToZip;
-var_dump($shipToZip);
-echo "shipFromZip: ".$shipFromZip;
-var_dump($shipFromZip);
 
 use FedEx\RateService\Request;
 use FedEx\RateService\ComplexType;
@@ -130,8 +121,6 @@ $rateReply = $rateServiceRequest->getGetRatesReply($rateRequest); // send true a
 
 $count = 0;
 $result = array();
-echo '<pre>';
-print_r ($rateReply);
 
 if (!empty($rateReply->RateReplyDetails)) {
     $result['err'] = false;
