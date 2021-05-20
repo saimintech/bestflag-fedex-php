@@ -4,7 +4,8 @@ ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_report
 if(!isset($_POST) && !isset($_GET))
 	die;
 
-
+print_r($_POST);
+print_r($_GET);
 
 
 require_once "functions.php";
