@@ -16,7 +16,7 @@ $shipToAddress = array(trim($_POST['shipToaddress1']), trim($_POST['shipToaddres
 $shipToAddress = array_filter($shipToAddress);
 $shipToCity    = trim($_POST['shipTocity']);
 $shipToState   = trim($_POST['shipTostate']);
-$shipToZip     = (int)trim($_POST['shipTozip']);
+$shipToZip     = trim($_POST['shipTozip']);
 $shipToCountry = trim($_POST['shipTocountry']);
 $shipToDate    = trim($_POST['shipTodate']);
 $is_residential = trim($_POST['shipToresidential']);
@@ -26,7 +26,7 @@ $shipFromAddress = array(trim($_POST['shipFromaddress1']), trim($_POST['shipFrom
 $shipFromAddress = array_filter($shipFromAddress);
 $shipFromCity    = trim($_POST['shipFromcity']);
 $shipFromState   = trim($_POST['shipFromstate']);
-$shipFromZip     = (int)trim($_POST['shipFromzip']);
+$shipFromZip     = trim($_POST['shipFromzip']);
 $shipFromCountry = trim($_POST['shipFromcountry']);
 
 //item specifications
