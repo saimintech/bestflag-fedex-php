@@ -36,6 +36,12 @@ $length     = (int)trim($_POST['length']);
 $width      = (int)trim($_POST['width']);
 $height     = (int)trim($_POST['height']);
 
+
+echo "shipToZip: ".$shipToZip;
+var_dump($shipToZip);
+echo "shipFromZip: ".$shipFromZip;
+var_dump($shipFromZip);
+
 use FedEx\RateService\Request;
 use FedEx\RateService\ComplexType;
 use FedEx\RateService\SimpleType;
